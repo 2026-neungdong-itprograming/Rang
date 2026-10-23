@@ -1,0 +1,8 @@
+// `base44 create` 실행 후 생성되는 base44/config.jsonc 에 아래 site 항목을 넣어 주세요.
+{
+  "site": {
+    "outputDirectory": "dist",
+    "buildCommand": "npm run build",
+    "serveCommand": "npm run dev"
+  }
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ko" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#131318" />
+    <meta name="description" content="촉법소년 범죄 증가 실태를 공식 통계로 살펴보고, 연령 하향 논쟁과 해결 방안을 함께 생각해 보는 인터랙티브 웹" />
+    <title>열넷의 경계 — 촉법소년 범죄와 해법</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script>
+      // 첫 페인트 전에 테마 확정 (깜빡임 방지). 기본값은 다크.
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light') document.documentElement.dataset.theme = 'light';
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
